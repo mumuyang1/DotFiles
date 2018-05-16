@@ -1,0 +1,30 @@
+[user]
+	name = Li Yanzi
+	email = heymumuyang@gmail.com
+[push]
+	default = simple
+[core]
+	excludesfile = /Users/yzli/.gitignore_global
+	autocrlf = input
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[alias]
+	a = add -p
+	ca = commit --amend
+	cm = commit -m
+	co = checkout
+	st = status
+	br = branch
+	d = diff
+   	fa = fetch --a 
+	ps = push
+	pr = pull --rabase
+	rc = rebase --continue
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	
+[commit]
+	template = /Users/yzli/.stCommitMsg
